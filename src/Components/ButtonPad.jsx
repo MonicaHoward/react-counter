@@ -13,7 +13,7 @@ export default function ButtonPad() {
     }
 
     const resetClicks = () => {
-        setCount(0);
+        window.confirm("Are you sure you want to start over? Press 'OK' to reset and 'Cancel' to go back") ? setCount(0) : setCount(count)
     }
 
     return (
