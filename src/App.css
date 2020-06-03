@@ -17,12 +17,24 @@
 .dec {
   grid-column: 1/2;
 }
+.dec:hover{
+  border: 3px solid yellow;
+  cursor: pointer;
+}
 .count {
   grid-column: 2/5;
 }
 .inc {
   grid-column: 5/6;
 }
+.inc:hover{
+  border: 3px solid green;
+  cursor: pointer;
+}
 .reset {
   grid-column: 3/4;
+}
+.reset:hover {
+  border: 3px solid red;
+  cursor: pointer;
 }
