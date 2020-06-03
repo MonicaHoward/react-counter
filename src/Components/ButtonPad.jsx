@@ -17,11 +17,22 @@ export default function ButtonPad() {
     }
 
     return (
-        <div>
-            {count}
-            <button onClick={decrementClick}>click</button>
-            <button onClick={incrementClick} >click</button>
-            <button onClick={resetClicks}>Reset</button>
+        <div className="wrapper">
+            <button 
+                className="main dec"
+                onClick={decrementClick}
+            >
+                - 1
+            </button>
+            <span className="main count">{count}</span>
+            <button 
+                className="main inc" 
+                onClick={incrementClick} 
+            >
+                + 1
+            </button>
+
+            <button className="reset" onClick={resetClicks}>reset</button>
         </div>
     )
 }

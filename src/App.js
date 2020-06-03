@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Counter App</h2>
+        <h2 style={{textAlign: "center"}}>Counter App</h2>
       </header>
       <Counter/>
     </div>
