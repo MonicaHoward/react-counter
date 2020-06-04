@@ -1,13 +1,14 @@
-import React from 'react';
-import Display from './Display';
+import React, {useState} from 'react';
+// import Display from './Display';
 import ButtonPad from './ButtonPad';
 
 
 function Counter() {
+
     return (
         <div className="counter">
-            <Display/>
-            <ButtonPad/>
+            {/* <Display /> */}
+            <ButtonPad />
         </div>
     )
 }

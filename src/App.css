@@ -1,38 +1,46 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+
+button:hover, button:focus, button:active, button:visited{
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 6;
+  grid-template-rows: 2;
+  grid-gap: 10px;
+  margin: 10%;
+  font-family: 'Spartan', sans-serif;  
+
+}
+.main, .dec, .inc, .reset {
+  border: 4px solid #f1faee;
+  padding: 1%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dec {
+  grid-column: 1/2;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dec:hover{
+  border: 3px solid yellow;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.count {
+  grid-column: 2/5;
 }
-
-.App-link {
-  color: #61dafb;
+.inc {
+  grid-column: 5/6;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inc:hover{
+  border: 3px solid green;
+  cursor: pointer;
+}
+.reset {
+  grid-column: 3/4;
+}
+.reset:hover {
+  border: 3px solid red;
+  cursor: pointer;
 }

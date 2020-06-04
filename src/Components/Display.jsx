@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 function Display(props) {
-    // const [display,setDisplay] = useState(0);
+    const [display,setDisplay] = useState(0);
 
     return (
         <section className="display">
