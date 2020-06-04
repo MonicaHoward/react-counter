@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
 
+button:hover, button:focus, button:active, button:visited{
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 6;
@@ -9,7 +15,7 @@
   font-family: 'Spartan', sans-serif;  
 
 }
-.main, .reset {
+.main, .dec, .inc, .reset {
   border: 4px solid #f1faee;
   padding: 1%;
   text-align: center;
